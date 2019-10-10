@@ -49,4 +49,7 @@ public class MutiPageNewsCrawler extends BaseSeimiCrawler {
             logger.debug(e.getMessage(), e);
         }
     }
+
+
+
 }

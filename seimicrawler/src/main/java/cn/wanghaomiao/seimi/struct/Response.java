@@ -173,6 +173,13 @@ public class Response extends CommonObject {
         return BodyType.TEXT.equals(bodyType) && content != null ? JXDocument.create(content) : null;
     }
 
+
+
+    public JXDocument document(String content) {
+        return BodyType.TEXT.equals(bodyType) && content != null ? JXDocument.create(content) : null;
+    }
+
+
     public void saveTo(File targetFile) {
         try (
                 FileOutputStream fileOutputStream = new FileOutputStream(targetFile);
